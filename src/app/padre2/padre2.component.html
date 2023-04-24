@@ -1,0 +1,22 @@
+<h1 style="color:rgb(152, 152, 176)">Enviar más parámetro</h1>
+<table border="1" style="background-color: aqua;" >
+  <thead>
+    <tr>
+      <th>ID </th>
+      <th>NOMBRE</th>
+      <th>APELLIDO</th>
+      <th>EDAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>{{id}}</td>
+    <td>{{nombre}}</td>
+    <td>{{apellido}}</td>
+    <td>{{edad}}</td>
+
+    <td><button [routerLink]="['/hijo2',]"  [queryParams]="{id:id,nombre:nombre,apellido:apellido,edad:edad}" >Enviar</button></td>
+  </tr>
+  </tbody>
+  </table>
+  <br>

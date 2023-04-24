@@ -1,0 +1,10 @@
+
+      <select [(ngModel)]="enumColor">
+        <option *ngFor="let t of color" [value]="t">{{t}}</option>
+    </select>
+      <p [ngSwitch]="enumColor">
+        <option *ngSwitchCase="'verde'">Verde</option>
+        <option *ngSwitchCase="'azul'">Azul</option>
+        <option *ngSwitchCase="'amarillo'">Amarillo</option>
+        <option *ngSwitchDefault></option>
+      </p>

@@ -1,0 +1,19 @@
+<h1 style="color:rgb(157, 242, 206)">Enviar un parámetro</h1>
+<table border="1" style="background-color: aqua;" >
+  <thead>
+    <tr>
+      <th>ID </th>
+      <th>NOMBRE</th>
+      <th>EDAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>{{id}}</td>
+    <td>{{nombre}}</td>
+    <td>{{edad}}</td>
+  </tr>
+  </tbody>
+  </table>
+  <td><button [routerLink]="['/hijo1',id]"  >Enviar</button></td>
+  <br>
